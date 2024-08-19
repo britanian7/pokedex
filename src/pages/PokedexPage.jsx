@@ -103,8 +103,8 @@ const PokedexPage = () => {
             className="toggle-dark-mode"
             src={
               themeState.darkMode
-                ? "../../public/solrock.png"
-                : "../../public/lunatone.png"
+                ? "./solrock.png"
+                : "./lunatone.png"
             }
             alt={themeState.darkMode ? "lunatone" : "solrock"}
             width={80}
