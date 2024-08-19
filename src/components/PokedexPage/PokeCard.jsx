@@ -84,7 +84,7 @@ const PokeCard = ({ pokemon, onButtonClick }) => {
               e.stopPropagation();
               if (onButtonClick) onButtonClick(pokemon);
             }}
-            src="../../../public/pokebola.png"
+            src="./pokebola.png"
             alt="pokebola"
             width={40}
           />
