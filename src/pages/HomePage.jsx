@@ -37,7 +37,7 @@ const HomePage = () => {
           {errorMessage && <p className="error-message">{errorMessage}</p>}
         </form>
         <div className="pikachu-run">
-          <img src="../../public/pikachu_run.gif" alt="pikachu" width={170} />
+          <img src="/pikachu_run.gif" alt="pikachu" width={170} />
         </div>
       </div>
     </div>
