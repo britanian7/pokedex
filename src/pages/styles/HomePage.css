@@ -1,0 +1,104 @@
+.container-all {
+  background-image: url(https://media-s3-us-east-1.ceros.com/hype-beast/images/2018/07/13/a9a51bc0b8d626db493ab5f9a971b043/background-hero.png?imageOpt=1&fit=bounds&width=2163);
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.container-all::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(2px);
+  z-index: 1;
+}
+
+.container-home {
+  box-sizing: border-box;
+  margin: 0 auto;
+  font-family: system-ui;
+  text-align: center;
+  position: relative;
+  z-index: 2;
+  width: 100vh;
+  height: 100vh;
+}
+
+.title-home {
+  font-family: "Pokemon Solid", sans-serif;
+  font-size: 10vw;
+  max-width: 100%;
+  line-height: 1.2;
+  margin: 10px 0 50px 0;
+  color: #ffde00;
+  -webkit-text-stroke: 2px #3b4cca;
+  text-shadow: 2px 2px 0 #3b4cca, -2px 2px 0 #3b4cca, 2px -2px 0 #3b4cca,
+    -2px -2px 0 #3b4cca;
+  position: relative;
+  z-index: 2;
+}
+
+.input-home {
+  width: 80%;
+  padding: 12px;
+  margin: 10px;
+  font-size: 1.5rem;
+  border: none;
+  position: relative;
+  z-index: 2;
+  border-radius: 0.5rem;
+}
+
+.button-home {
+  margin-top: 1rem;
+  padding: 1rem 2rem;
+  font-size: 1.3rem;
+  font-weight: bold;
+  border: none;
+  border-radius: 0.5rem;
+  background-color: #ffde00;
+  color: #3b4cca;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out,
+    transform 0.3s ease-in-out;
+  &:hover {
+    background-color: #3b4cca;
+    color: #ffde00;
+    transform: scale(1.03);
+  }
+}
+
+.container-home {
+  position: relative;
+}
+
+.pikachu-run {
+  position: absolute;
+  bottom: 10vh;
+  left: 0;
+  animation: movePikachu 5s linear infinite;
+}
+
+@keyframes movePikachu {
+  0% {
+    left: -35vw;
+  }
+  100% {
+    left: 60vw;
+  }
+}
+
+.error-message {
+  color: red;
+  margin-top: 10px;
+  font-size: 20px;
+  font-weight: bold;
+}

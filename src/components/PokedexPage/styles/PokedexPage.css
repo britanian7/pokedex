@@ -1,0 +1,17 @@
+.pokedex-page {
+  padding: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.poke-card {
+  flex: 1 1 calc(25% - 20px);
+  box-sizing: border-box;
+  max-width: calc(25% - 20px);
+}
+
+.ellipsis {
+  margin: 0 0.2rem;
+}

@@ -1,0 +1,100 @@
+:root {
+  --background-color: #f4f4f4;
+  --text-color: #333;
+}
+
+[data-theme="dark"] {
+  --background-color: #222;
+  --text-color: #fff;
+}
+
+.pokedex-page {
+  background-color: var(--background-color);
+  color: var(--text-color);
+}
+
+.toggle-dark-mode {
+  background-color: var(--button-background);
+  color: #fff;
+  border: none;
+  padding: 10px 10px;
+  border-radius: 50%;
+  box-shadow: 0 0 10px silver;
+  cursor: pointer;
+  justify-content: center;
+  transition: ease-in-out 0.3s;
+  &:hover {
+    transform: scale(1.04);
+  }
+}
+
+.toggle-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.toggle-dark-mode:hover {
+  opacity: 0.8;
+}
+
+.pokedex-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 12px 0;
+  gap: 10px;
+  justify-content: center;
+}
+
+.container-detail-team {
+  display: flex;
+}
+
+.pokedex-page .info {
+  text-align: center;
+  gap: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.pokedex-page section {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+  width: 100%;
+}
+
+.info-detail {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+}
+
+.search-input,
+.typeInput,
+#limit {
+  padding: 10px 20px;
+  font-size: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 0.3rem;
+  background-color: #fff;
+  color: #333;
+  cursor: pointer;
+  font-size: 16px;
+  max-width: 300px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  transition: border-color 0.3s, background-color 0.3s;
+}
+
+.search-input {
+  cursor: text;
+}
+
+.welcome-message {
+  font-family: "Nunito", sans-serif;
+  font-size: 22px;
+}

@@ -1,0 +1,183 @@
+.poke-info-page {
+  background: linear-gradient(to bottom, #808080, #e6e6e6, #b3b3b3);
+  text-align: center;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-width: 600px;
+  margin: 20px auto;
+  font-family: "Nunito", sans-serif;
+  color: #555;
+}
+
+.poke-info-page h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.poke-image {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.data-pokemon-info {
+  display: flex;
+  justify-content: center;
+  margin: 15px 0;
+  .number-pokemon,
+  .type-pokemon-info {
+    margin: 0 30px;
+  }
+}
+
+.poke-info-page p {
+  font-size: 1.2rem;
+  margin: 10px 0;
+}
+
+.poke-info-page p strong {
+  color: #555;
+}
+
+.checkbox-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.checkbox-container input[type="checkbox"] {
+  margin-right: 10px;
+  width: 20px;
+  height: 20px;
+  accent-color: #007bff;
+}
+
+.checkbox-container label {
+  font-size: 1.3rem;
+  color: #333;
+}
+
+.stat {
+  text-align: left;
+}
+
+.button-back {
+  margin: 0 0.2rem;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 0.3rem;
+  background-color: #fff;
+  color: #333;
+  cursor: pointer;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.3s, color 0.3s, ease-in-out 0.3s;
+  &:hover {
+    transform: scale(1.07);
+    transition: ease-in-out 0.3s;
+  }
+}
+
+/***************/
+.progress-bar {
+  background-color: #ffffff;
+  border-radius: 5px;
+  overflow: hidden;
+  width: 100%;
+  margin: 5px 0;
+}
+
+.progress {
+  width: 0;
+  transition: width 0.3s ease;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding-right: 10px;
+}
+
+.progress-bar span {
+  font-size: 1.2rem;
+  display: block;
+  margin-left: 10px;
+  line-height: 1.5rem;
+  color: #fff;
+}
+
+.type-fire .progress {
+  background-color: #f50000;
+}
+
+.type-water .progress {
+  background-color: #1e90ff;
+}
+
+.type-grass .progress {
+  background-color: #4caf50;
+}
+
+.type-electric .progress {
+  background-color: #ffeb3b;
+  color: #000;
+}
+
+.type-ice .progress {
+  background-color: #00bcd4;
+}
+
+.type-fighting .progress {
+  background-color: #f44336;
+}
+
+.type-poison .progress {
+  background-color: #9c27b0;
+}
+
+.type-ground .progress {
+  background-color: #795548;
+}
+
+.type-flying .progress {
+  background-color: #607d8b;
+}
+
+.type-psychic .progress {
+  background-color: #e91e63;
+}
+
+.type-bug .progress {
+  background-color: #4caf50;
+}
+
+.type-rock .progress {
+  background-color: #9e9e9e;
+}
+
+.type-ghost .progress {
+  background-color: #673ab7;
+}
+
+.type-dragon .progress {
+  background-color: #3f51b5;
+}
+
+.type-dark .progress {
+  background-color: #212121;
+}
+
+.type-steel .progress {
+  background-color: #9e9e9e;
+}
+
+.type-fairy .progress {
+  background-color: #f48fb1;
+}
+
+.type-normal .progress {
+  background-color: #9e9e9e;
+}
